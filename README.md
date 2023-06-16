@@ -5,15 +5,25 @@ This is the interview questions for python dev skills.
 ---
 ### 1. How do you setup local python dev environment?  
 - What IDE do you use?
+  - VS Code or PyCharm
 - How do you setup python production environment in Linux?
   - List the cli commands if possible.
+   1. Update the package lists by running: `sudo apt update`
+   2. Install Python: `sudo apt install python3`
+   3. Install pip: `sudo apt install python3-pip`
+   4. Set up a virtual environment: `sudo apt install python3-venv`  `python3 -m venv myenv`
+   5. Activate the virtual environment: `source myenv/bin/activate`
+   6. Install project dependencies: `pip install -r requirements.txt`
+   7. Depending on the project's requirements, install additional tools
+   8. Verify the setup by running: `python --version`, `pip --version`
 
 ---
 ### 2. Are you familiar using any linux distro?
-- crontab
-- ssh
-- nfs
-- nginx
+- Yes
+  - crontab: The crontab command is used to manage cron jobs in Linux. It's a time-based job scheduler that allows you to schedule and automate tasks to run at specific intervals.
+  - ssh: SSH (Secure Shell) is a network protocol that provides secure remote access to a Linux system. It allows you to log in and access a remote server over an encrypted connection.
+  - nfs: NFS (Network File System) is a distributed file system protocol that allows a user on a client computer to access files over a network as if they were on the local system. With NFS, you can share directories from a server and mount them on client machines, enabling file sharing and centralized storage.
+  - nginx: Nginx is a web server and reverse proxy server. It's known for its high performance, scalability, and efficient handling of concurrent connections. Nginx is often used as a web server to serve static files or as a reverse proxy to distribute incoming requests to multiple backend servers.
 
 ---
 ### 3. Setup a RESTful API with python & nginx.
