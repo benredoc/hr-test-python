@@ -67,7 +67,7 @@ curl 127.0.0.1/noexist
 
 #### What to submit:
 - Python code
-
+ - The Python code is in a `api.py` file that's included in the root-level directory of this branch
 ---
 ### 3.1 Nginx (Optional)
 - Use Nginx as the front web server (reverse proxy)
@@ -75,3 +75,4 @@ curl 127.0.0.1/noexist
 
 #### What to submit:
 - Nginx server config
+ - The Nginx server config is in a `nginx.conf` file that is included in root-level directory of this branch
